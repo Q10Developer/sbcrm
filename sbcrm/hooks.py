@@ -5,6 +5,27 @@ app_description = "SB CRM"
 app_email = "astha@gmail.com"
 app_license = "mit"
 
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Lead", "Contact", "Customer"]]
+        ]
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["doc_type", "in", ["Lead", "Contact", "Customer"]]
+        ]
+    }
+]
+
+
+
+
+
+
 # Apps
 # ------------------
 

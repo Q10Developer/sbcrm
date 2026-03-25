@@ -1,0 +1,542 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-24 18:01:24.542201",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "opportunity_from",
+  "party",
+  "customer_name",
+  "status",
+  "column_break_7c4o",
+  "sales_stage",
+  "expected_closing_date",
+  "probability_",
+  "organization_section",
+  "no_of_employees",
+  "annual_revenue",
+  "customer_group",
+  "column_break_u1xy",
+  "industry",
+  "market_segment",
+  "website",
+  "column_break_h1s5",
+  "city",
+  "stateprovince",
+  "country",
+  "territory",
+  "opportunity_value_section",
+  "currency",
+  "opportunity_type",
+  "source",
+  "opportunity_owner",
+  "column_break_oaxi",
+  "exchange_rate",
+  "column_break_stl9",
+  "opportunity_amount",
+  "opportunity_amount_company_currency",
+  "more_information_section",
+  "company",
+  "campaign",
+  "opportunity_date",
+  "column_break_35jq",
+  "print_language",
+  "amended_from",
+  "title",
+  "first_response_time",
+  "lost_reasons_section",
+  "lost_reasons",
+  "detailed_reason",
+  "column_break_3wjk",
+  "competitors",
+  "contacts_tab",
+  "primary_contact_section",
+  "contact_person",
+  "job_title",
+  "column_break_xhyh",
+  "contact_email",
+  "contact_mobile",
+  "column_break_plcs",
+  "whatsapp",
+  "phone",
+  "phone_ext",
+  "address_and_contact_section",
+  "address_html",
+  "customer__lead_address",
+  "address",
+  "column_break_pq9m",
+  "contact_html",
+  "contact",
+  "items_tab",
+  "items",
+  "section_break_q0mj",
+  "total_company_currency",
+  "column_break_jbs4",
+  "total",
+  "activities_tab",
+  "open_activities_html",
+  "all_activities_section",
+  "all_activities_html",
+  "comments_tab",
+  "notes_html",
+  "notes",
+  "connections_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Opportunity"
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "CRM-OPP-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "opportunity_from",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opportunity From",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Party",
+   "options": "opportunity_from",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nQuotation\nConverted\nLost\nReplied\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7c4o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_stage",
+   "fieldtype": "Link",
+   "label": "Sales Stage",
+   "options": "Sales Stage"
+  },
+  {
+   "fieldname": "expected_closing_date",
+   "fieldtype": "Date",
+   "label": "Expected Closing Date"
+  },
+  {
+   "fieldname": "probability_",
+   "fieldtype": "Percent",
+   "label": "Probability (%)"
+  },
+  {
+   "fieldname": "organization_section",
+   "fieldtype": "Section Break",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "no_of_employees",
+   "fieldtype": "Select",
+   "label": "No of Employees",
+   "options": "1-10\n11-50\n51-200\n201-500\n501-1000\n1000+"
+  },
+  {
+   "fieldname": "annual_revenue",
+   "fieldtype": "Currency",
+   "label": "Annual Revenue"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "column_break_u1xy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "Industry Type"
+  },
+  {
+   "fieldname": "market_segment",
+   "fieldtype": "Link",
+   "label": "Market Segment",
+   "options": "Market Segment"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break_h1s5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "stateprovince",
+   "fieldtype": "Data",
+   "label": "State/Province"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "opportunity_value_section",
+   "fieldtype": "Section Break",
+   "label": "Opportunity Value"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "opportunity_type",
+   "fieldtype": "Link",
+   "label": "Opportunity Type",
+   "options": "Opportunity Type"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Lead Source"
+  },
+  {
+   "fieldname": "opportunity_owner",
+   "fieldtype": "Link",
+   "label": "Opportunity Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_oaxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate"
+  },
+  {
+   "fieldname": "column_break_stl9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "opportunity_amount",
+   "fieldtype": "Currency",
+   "label": "Opportunity Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "opportunity_amount_company_currency",
+   "fieldtype": "Currency",
+   "label": "Opportunity Amount (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information",
+   "options": "fa fa-file-text"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "label": "Campaign",
+   "options": "Campaign"
+  },
+  {
+   "fieldname": "opportunity_date",
+   "fieldtype": "Date",
+   "label": "Opportunity Date"
+  },
+  {
+   "fieldname": "column_break_35jq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "print_language",
+   "fieldtype": "Link",
+   "label": "Print Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "first_response_time",
+   "fieldtype": "Duration",
+   "label": "First Response Time"
+  },
+  {
+   "fieldname": "lost_reasons_section",
+   "fieldtype": "Section Break",
+   "label": "Lost Reasons"
+  },
+  {
+   "fieldname": "lost_reasons",
+   "fieldtype": "Table MultiSelect",
+   "label": "Lost Reasons",
+   "options": "Opportunity Lost Reason Detail"
+  },
+  {
+   "fieldname": "detailed_reason",
+   "fieldtype": "Small Text",
+   "label": "Detailed Reason"
+  },
+  {
+   "fieldname": "column_break_3wjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "competitors",
+   "fieldtype": "Table MultiSelect",
+   "label": "Competitors",
+   "options": "Competitor Detail"
+  },
+  {
+   "fieldname": "contacts_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contacts",
+   "options": "fa fa-bullhorn"
+  },
+  {
+   "fieldname": "primary_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Primary Contact"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "column_break_xhyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "contact_mobile",
+   "fieldtype": "Data",
+   "label": "Contact Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_break_plcs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "whatsapp",
+   "fieldtype": "Data",
+   "label": "WhatsApp",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "phone_ext",
+   "fieldtype": "Data",
+   "label": "Phone Ext."
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address & Contact"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML"
+  },
+  {
+   "fieldname": "customer__lead_address",
+   "fieldtype": "Link",
+   "label": "Customer / Lead Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_pq9m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Small Text",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "items_tab",
+   "fieldtype": "Tab Break",
+   "label": "Items",
+   "options": "fa fa-shopping-cart"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Opportunity Item"
+  },
+  {
+   "fieldname": "section_break_q0mj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Total (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "column_break_jbs4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "options": "currency"
+  },
+  {
+   "fieldname": "activities_tab",
+   "fieldtype": "Tab Break",
+   "label": "Activities"
+  },
+  {
+   "fieldname": "open_activities_html",
+   "fieldtype": "HTML",
+   "label": "Open Activities HTML"
+  },
+  {
+   "fieldname": "all_activities_section",
+   "fieldtype": "Section Break",
+   "label": "All Activities"
+  },
+  {
+   "fieldname": "all_activities_html",
+   "fieldtype": "HTML",
+   "label": "All Activities HTML"
+  },
+  {
+   "fieldname": "comments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "notes_html",
+   "fieldtype": "HTML",
+   "label": "Notes HTML"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Table",
+   "label": "Notes",
+   "options": "CRM Note"
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-24 18:46:46.560850",
+ "modified_by": "Administrator",
+ "module": "SB CRM",
+ "name": "SB Opportunity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
